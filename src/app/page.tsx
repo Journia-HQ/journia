@@ -14,7 +14,7 @@ export default function Home() {
       <h1 className="border-b h-[70px]">Home</h1>
       <div className="flex flex-col align-middle">
         {
-          blocks.map(block => <div>this is a block</div>)
+          blocks.map((block, i) => <div key={i}>this is a block</div>)
         }
       </div>
     </div>
