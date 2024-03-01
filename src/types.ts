@@ -5,8 +5,8 @@ type Block = {
 }
 
 export enum ContentBlockType {
-  note = "note",
-  todo = "todo"
+  note = 'note',
+  todo = 'todo',
 }
 
 export type NoteBlock = Block & {

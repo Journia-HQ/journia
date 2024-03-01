@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 // This is an example of how functional React components should look like.
 
@@ -7,7 +7,6 @@
 // inside and to name components in Pascal Case.
 
 // This component will be a customizable button.
-
 
 // This is a type declaration for our component's props
 type ExampleComponentProps = {
@@ -29,7 +28,10 @@ type ExampleComponentProps = {
 
 // (...) => {...} - function itself
 
-const ExampleComponent: React.FC<ExampleComponentProps> = ({ buttonText, clickHandler }) => {
+const ExampleComponent: React.FC<ExampleComponentProps> = ({
+  buttonText,
+  clickHandler,
+}) => {
   // You can insert any JS value inside the TSX syntax by using {}
   return (
     <button
@@ -44,9 +46,9 @@ const ExampleComponent: React.FC<ExampleComponentProps> = ({ buttonText, clickHa
 // This is another component, just to show how to use our ExampleComponent
 // This component is used in the page.tsx file and you can see it in the browser.
 const SomeComponent = () => {
-  const textForButton = "Click me!"
+  const textForButton = 'Click me!'
   const functionForButton = () => {
-    console.log("The button was clicked!")
+    console.log('The button was clicked!')
   }
 
   // Notice how for component to work we need to pass it all the values
